@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+
+/* CSS Starts */
+body.rtl {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+}
+.rtl .hero-text {
+  left: 22%;
+}
+.rtl .nav-menu {
+  left: unset;
+  right: 0;
+  transform: translateX(100%);
+}
+.rtl .active {
+  transform: translateX(0);
+}
+.rtl .nav-items a {
+  padding-left: unset;
+  padding-right: 20px;
+}
+.rtl .nav-items a:hover {
+  transform: translateX(-10px);
+}
+.rtl .nav-social li {
+  padding: 148px 20px 0 0;
+}
+.rtl .lang i {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.rtl .lang a {
+  font-size: 16px;
+}
+.rtl .nav-footer p {
+  padding-left: unset;
+  padding-right: 20px;
+}
+.rtl .fa-angle-right {
+  right: unset;
+  left: -64px;
+}
+/* Mobile CSS - 767px */
+@media (max-width: 767px) {
+  .rtl .nav-social li {
+    padding-top: 275px;
+  }
+  .rtl .nav-footer p {
+    margin-top: 10px;
+  }
+  .rtl .nav-social li:nth-child(2),
+  .rtl .nav-social li:nth-child(3),
+  .rtl .nav-social li:nth-child(4) {
+    padding-left: unset;
+  }
+}
+/* Mobile CSS - 400px */
+@media (max-width: 400px) {
+  .rtl .nav-social li {
+    padding-top: 200px;
+  }
+}
+/* Desktop CSS - 1536px */
+@media (min-width: 1536px) {
+  .rtl .nav-social li {
+    padding: 247px 20px 0 0;
+  }
+
+  .rtl .hero-text {
+    left: 21%;
+  }
+}
